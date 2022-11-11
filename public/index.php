@@ -1,17 +1,14 @@
 <?php
 
-use PlugRoute\PlugRoute;
-
 require_once '../vendor/autoload.php';
+
+use PlugRoute\PlugRoute;
 
 $route = new PlugRoute();
 
-$route->get('/')
-    ->callback(function () {
-
-        $teste = ['teste' => 'Testando API'];
-
-        echo json_encode($teste);
+$route->namespace('\App\Http\Controllers')
+    ->group(function ($route) {
+        $route->get('/')->controller('\TesteController', 'teste');
     });
 
 $route->run();

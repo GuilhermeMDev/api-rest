@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "a3c29155490cdd707a3eec48b23738af",
+    "content-hash": "96e853cc568d0ddf830b90951a511b2d",
     "packages": [
         {
             "name": "erandir/plug-route",
@@ -56,7 +56,9 @@
     "stability-flags": [],
     "prefer-stable": false,
     "prefer-lowest": false,
-    "platform": [],
+    "platform": {
+        "ext-pdo": "*"
+    },
     "platform-dev": [],
     "plugin-api-version": "2.3.0"
 }
