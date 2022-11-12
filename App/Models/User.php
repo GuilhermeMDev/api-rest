@@ -5,8 +5,8 @@ namespace App\Models;
 
 class User
 {
-    private static $table = 'user';
-    public $name ;
+    private static $table = 'users';
+    public $name;
     public $id;
 
     /**

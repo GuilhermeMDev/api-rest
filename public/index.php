@@ -8,7 +8,8 @@ $route = new PlugRoute();
 
 $route->namespace('\App\Http\Controllers')
     ->group(function ($route) {
-        $route->get('/')->controller('\TesteController', 'teste');
+        $route->get('/')->controller('\DataController', 'search');
+        $route->get('/data-dive')->controller('\DataController', 'dataDive');
     });
 
 $route->run();
